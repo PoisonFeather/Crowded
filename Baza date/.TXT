@@ -1,0 +1,3 @@
+baza_date_restaurant
+__restaurant__
+count|nume|avg_time|LOGO|live_count|rating|
