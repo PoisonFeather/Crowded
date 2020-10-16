@@ -1,0 +1,10 @@
+.center {
+    text-align: center;
+    padding-left: inherit;
+    list-style-position: inside;
+}
+
+ol.center li {
+    text-align: left;
+    margin-left: 45%;
+}
