@@ -3,12 +3,31 @@
 
     <head>
         <title>Tester</title>
+
+        <script>
+            function showRestaurant(str) {
+                if (str == "") {
+                    document.getElementById("form").innerHTML = "";
+                    return;
+                } else {
+                    var xmlhtpp = new XMLHttpRequest();
+                    xmlhttp.onreadysetstatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById('form').innerHTML = this.responseText;
+                        };
+                        xmlhttp.open("GET", "add.php?q=" + str, true);
+                        xmlhttp.send();
+                    }
+                }
+            }
+        </script>
+
     </head>
 
     <body>
         <a href="index.html">Back</a>
         <h1>Tester baza de date</h1>
-        <form name="form" action="baza_date.php" method="POST">
+        <form name="form" onchange="showRestaurant(this.value)">
             <input type="text" name="nume_restaurant" value="nume_restaurant" />
             <input type="number" name="live_count" value="live_count" />
             <input type="number" name="rating" value="rating" />
