@@ -15,7 +15,7 @@
                         if (this.readyState == 4 && this.status == 200) {
                             document.getElementById('form').innerHTML = this.responseText;
                         };
-                        xmlhttp.open("GET", "add.php?q=" + str, true);
+                        xmlhttp.open("GET", "192.168.0.109/Me/Crowded/Server%20Side/add.php?q=" + str, true);
                         xmlhttp.send();
                     }
                 }
@@ -28,10 +28,7 @@
         <a href="index.html">Back</a>
         <h1>Tester baza de date</h1>
         <form name="form" onchange="showRestaurant(this.value)">
-            <input type="text" name="nume_restaurant" value="nume_restaurant" />
-            <input type="number" name="live_count" value="live_count" />
-            <input type="number" name="rating" value="rating" />
-            <input type="submit" />
+            <input type="text" name="nume_restaurant" value="" />
         </form>
     </body>
 </htm>
