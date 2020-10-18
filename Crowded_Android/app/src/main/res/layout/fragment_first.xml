@@ -18,26 +18,27 @@
         android:paddingTop="5dp"
         android:paddingRight="2dp"
         android:paddingBottom="5dp"
-        android:text="@string/Crowded_waiting"
+        android:text="Crowded_waiting"
         android:textColor="#4F6467"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="sans"
-        app:layout_constraintBottom_toTopOf="@id/join_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
         tools:text="Crowded is waiting for more restaurants to join the netwok" />
 
     <Button
-        android:id="@+id/join_button"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join the NETWOK"
-        app:backgroundTint="#4F6467"
-        app:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Intra in retea"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        tools:layout_editor_absoluteY="327dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
