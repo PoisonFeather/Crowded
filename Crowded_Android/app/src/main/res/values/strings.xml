@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Crowded_Android</string>
+    <string name="app_name">Crowded</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -9,4 +9,5 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="stitch_client_app_id">34ece7bf-7f3c-4bdc-9000-bd2dfc6d424b</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.crowded_android
+package com.example.crowded
 
 import org.junit.Test
 
